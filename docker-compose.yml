@@ -1,0 +1,9 @@
+# === docker-compose.yml ===
+services:
+  my_service:
+    image: public.images.repo/my-service
+    container_name: my_service
+    volumes:
+      - /Users/me/public.pem:/public.pem
+    environment:
+      - CERT_PATH=/public.pem
